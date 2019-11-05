@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(3, 180, 136);
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  padding: 1em 1.5em;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  margin-top: 8em;
+  border-radius: 5px;
+  box-shadow: 1px -1px 15px -2px rgba(0, 0, 0, 0.63);
+  background: rgb(248, 248, 248) url("img/bicycle.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 32vh;
+}
+
+/* HEADER CON LOGIN */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 23%;
+  margin-bottom: 2em;
+}
+
+header img {
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 50%;
+  padding: 2px;
+  transition: all 0.3s;
+}
+
+header img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 8px rgba(0, 0, 0, 0.322);
+}
+
+header p {
+  font-size: 0.75em;
+  color: grey;
+  width: 100%;
+}
+
+/* LISTA DE PRODCUTOS */
+
+.products-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.products-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-price {
+  font-weight: 700;
+}
+
+/* TOTAL ROW */
+.products-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.products-total-span {
+  color: rgb(100, 100, 100);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 55%;
+    padding: 1.2em 2.5em;
+    background-position-y: 25vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 1em 2em;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 35%;
+  }
+
+  header img {
+    padding: 10px;
+  }
+
+  .products-list {
+    height: 30%;
+  }
+}
