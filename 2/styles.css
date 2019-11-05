@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+/* Body - Container */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*  */
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  width: 75%;
+  height: 60%;
+  overflow: hidden;
+}
+
+/* Dots - Title */
+
+.dots-and-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+  padding: 0.5em;
+}
+
+.dots_container {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  /*  */
+  border-radius: 50%;
+  background: rgb(211, 210, 210);
+}
+
+.dot:first-child {
+  background: rgb(139, 139, 139);
+}
+
+/*--------- Credit cards ----------*/
+
+/* Container */
+
+.payment-method-container {
+  display: flex;
+  flex-flow: column;
+  height: 70%;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+/* Credit cards */
+
+.card-item {
+  display: flex;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card-item img {
+  margin-left: 2em;
+}
+
+.card-name {
+  font-size: 0.75rem;
+  margin-left: 1em;
+  color: rgb(102, 102, 102);
+}
+
+/* Button */
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button img {
+  margin-left: 1em;
+}
+
+/**********
++
++
+ DISEGN AND STYLES
++
++
+************/
+
+/* container */
+
+.container {
+  border-radius: 7px;
+  box-shadow: 1px -1px 9px 8px rgba(0, 0, 0, 0.246);
+}
+
+/* Border bottom  */
+
+.dots-and-title,
+.card-item {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.border-none {
+  border: none;
+}
+
+/* Credit card logo */
+
+.card-item img {
+  width: 50px;
+}
+
+/* Button */
+
+button {
+  color: whitesmoke;
+  border: none;
+  background: rgb(92, 140, 243);
+}
+
+button img {
+  width: 20px;
+}
+
+/* HOVERS */
+
+.card-item:hover {
+  background: rgba(0, 0, 0, 0.061);
+}
+
+button:hover {
+  background: rgb(71, 120, 224);
+}
+
+/* BUTTON CLICK */
+button:hover:active {
+  transform: translateY(4px);
+}
+
+/* ----QUERIES--- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dots_container {
+    width: 8%;
+  }
+
+  button span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 30%;
+  }
+
+  .card-item img {
+    width: 100px;
+  }
+
+  .card-item .card-name {
+    font-size: 0.9rem;
+  }
+}
