@@ -48,7 +48,7 @@ header img {
 
 header img:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 1px 8px rgba(0, 0, 0, 0.322);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.137);
 }
 
 header p {
@@ -70,6 +70,10 @@ header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.products-name {
+  color: rgb(100, 100, 100);
 }
 
 .products-price {
@@ -113,5 +117,10 @@ header p {
 
   .products-list {
     height: 30%;
+  }
+
+  .products-price,
+  .products-total-price {
+    font-size: 1.2em;
   }
 }
